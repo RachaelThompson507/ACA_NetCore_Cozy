@@ -1,4 +1,19 @@
 ﻿<Properties StartupConfiguration="{F13594CC-D07C-47E4-9456-03F94F017732}|Default">
-  <MonoDevelop.Ide.ItemProperties.Cozy.WebUI FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cozy.WebUI/Views/_ViewStart.cshtml">
+    <Files>
+      <File FileName="Cozy.WebUI/Startup.cs" Line="29" Column="50" />
+      <File FileName="Cozy.WebUI/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Cozy.WebUI/Views/Home/Index.cshtml" Line="4" Column="1" />
+      <File FileName="Cozy.WebUI/Views/Shared/_Layout.cshtml" Line="9" Column="14" />
+      <File FileName="Cozy.WebUI/Views/_ViewStart.cshtml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Cozy.WebUI PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Cozy.Domain FirstBuild="True" />
 </Properties>

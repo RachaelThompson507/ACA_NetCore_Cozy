@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cozy.WebUI", "Cozy.WebUI\Cozy.WebUI.csproj", "{F13594CC-D07C-47E4-9456-03F94F017732}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cozy.Domain", "Cozy.Models\Cozy.Domain.csproj", "{175C384B-8599-4933-A91A-80EE26FC6126}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{F13594CC-D07C-47E4-9456-03F94F017732}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F13594CC-D07C-47E4-9456-03F94F017732}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F13594CC-D07C-47E4-9456-03F94F017732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{175C384B-8599-4933-A91A-80EE26FC6126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175C384B-8599-4933-A91A-80EE26FC6126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175C384B-8599-4933-A91A-80EE26FC6126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175C384B-8599-4933-A91A-80EE26FC6126}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

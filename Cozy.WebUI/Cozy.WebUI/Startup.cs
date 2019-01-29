@@ -15,6 +15,7 @@ namespace Cozy.WebUI
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -25,10 +26,13 @@ namespace Cozy.WebUI
                 app.UseDeveloperExceptionPage();
             }
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            //use static files first then use MVC
+            app.UseStaticFiles();
+
+            //Controller-View-?id
+            //Home-Index-Optional
+            app.UseMvcWithDefaultRoute();
+
         }
     }
 }
