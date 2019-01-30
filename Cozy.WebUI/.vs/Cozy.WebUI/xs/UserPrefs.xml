@@ -4,7 +4,7 @@
       <File FileName="Cozy.Models/Models/Home.cs" Line="13" Column="47" />
       <File FileName="Cozy.Models/Models/Lease.cs" Line="13" Column="45" />
       <File FileName="Cozy.Models/Models/Payment.cs" Line="14" Column="2" />
-      <File FileName="Cozy.Models/Models/Maintenance.cs" Line="11" Column="24" />
+      <File FileName="Cozy.Models/Models/Maintenance.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
