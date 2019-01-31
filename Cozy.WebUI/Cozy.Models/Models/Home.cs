@@ -9,7 +9,9 @@ namespace Cozy.Domain.Models
         public string State { get; set; }
         public string ImageURL { get; set; }
 
-        //Relationships
+        //Foriegn Key (FK)
         public string LandLordId { get; set; }
+        //navigational reference
+        public Landlord Landlord { get; set; }
     }
 }

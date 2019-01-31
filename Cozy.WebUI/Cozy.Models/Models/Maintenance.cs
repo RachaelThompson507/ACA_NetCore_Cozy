@@ -11,6 +11,8 @@ namespace Cozy.Domain.Models
         //Relationships
         public int HomeId { get; set; }
         public string TenantId { get; set; }
-
+        //nav reference 
+        public Home Home { get; set; }
+        public Tenant Tenant { get; set; }
     }
 }

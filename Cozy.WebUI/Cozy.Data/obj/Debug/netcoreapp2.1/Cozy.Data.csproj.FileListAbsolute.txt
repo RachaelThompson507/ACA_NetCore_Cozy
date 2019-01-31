@@ -1,0 +1,14 @@
+/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.Data/bin/Debug/netcoreapp2.1/Cozy.Data.deps.json
+/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.Data/bin/Debug/netcoreapp2.1/Cozy.Data.dll
+/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.Data/bin/Debug/netcoreapp2.1/Cozy.Data.pdb
+/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.Data/bin/Debug/netcoreapp2.1/Cozy.Domain.dll
+/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.Data/bin/Debug/netcoreapp2.1/Cozy.Domain.pdb
+/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.Data/obj/Debug/netcoreapp2.1/Cozy.Data.csproj.CoreCompileInputs.cache
+/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.Data/obj/Debug/netcoreapp2.1/Cozy.Data.AssemblyInfoInputs.cache
+/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.Data/obj/Debug/netcoreapp2.1/Cozy.Data.AssemblyInfo.cs
+/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.Data/obj/Debug/netcoreapp2.1/Cozy.Data.dll
+/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.Data/obj/Debug/netcoreapp2.1/Cozy.Data.pdb
+/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.Data/bin/Debug/netcoreapp2.1/Cozy.Data.runtimeconfig.json
+/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.Data/bin/Debug/netcoreapp2.1/Cozy.Data.runtimeconfig.dev.json
+/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.Data/obj/Debug/netcoreapp2.1/Cozy.Data.csprojAssemblyReference.cache
+/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.Data/obj/Debug/netcoreapp2.1/Cozy.Data.csproj.CopyComplete

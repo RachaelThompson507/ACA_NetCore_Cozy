@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Cozy.Domain.Models
 {
     public class Tenant
@@ -8,5 +10,9 @@ namespace Cozy.Domain.Models
         public string LastName { get; set; }
         public double Income { get; set; }
         public string PhoneNumber { get; set; }
+
+        //inverse relationship
+        public IEnumerable<Payment> Payments { get; set; }
+        //Could add LEASE - MAINTENANCE ETC
     }
 }
