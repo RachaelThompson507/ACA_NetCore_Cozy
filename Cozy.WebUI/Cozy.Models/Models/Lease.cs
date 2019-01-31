@@ -8,8 +8,12 @@ namespace Cozy.Domain.Models
         public DateTime EndDate { get; set; }
         public double RentPrice { get; set; }
 
-        //Relationships 
+        //Relationships (FK)
         public int HomeId { get; set; }
         public string TenantId { get; set; }
+        //navigational reference
+        public Home Home { get; set; }
+        public Tenant Tenant { get; set; }
+
     }
 }
