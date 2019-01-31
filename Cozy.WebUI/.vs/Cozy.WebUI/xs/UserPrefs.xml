@@ -1,22 +1,40 @@
 ﻿<Properties StartupConfiguration="{F13594CC-D07C-47E4-9456-03F94F017732}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Cozy.Data/Class1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cozy.WebUI/Program.cs">
     <Files>
-      <File FileName="Cozy.Models/Models/Landlord.cs" Line="13" Column="21" />
-      <File FileName="Cozy.Models/Models/Lease.cs" Line="11" Column="29" />
-      <File FileName="Cozy.Models/Models/Maintenance.cs" Line="16" Column="43" />
-      <File FileName="Cozy.Models/Models/Payment.cs" Line="15" Column="40" />
-      <File FileName="Cozy.Models/Models/Tenant.cs" Line="16" Column="28" />
-      <File FileName="Cozy.Data/Class1.cs" Line="1" Column="1" />
-      <File FileName="Cozy.Models/Models/Home.cs" Line="16" Column="6" NotebookId="1" />
+      <File FileName="Cozy.Data/Context/CozyDbContext.cs" Line="21" Column="13" />
+      <File FileName="Cozy.WebUI/Startup.cs" Line="22" Column="35" />
+      <File FileName="Cozy.WebUI/Program.cs" Line="17" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Cozy.WebUI" expanded="True">
+            <Node name="Cozy.Data" expanded="True">
+              <Node name="Context" expanded="True" />
+            </Node>
+            <Node name="Cozy.Domain" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="Cozy.WebUI" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Cozy.WebUI PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Cozy.WebUI PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Cozy.Domain FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.Cozy.Data FirstBuild="True" />
 </Properties>

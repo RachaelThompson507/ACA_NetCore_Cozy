@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Cozy.Data.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace Cozy.WebUI
 {
@@ -15,6 +17,12 @@ namespace Cozy.WebUI
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            //Add A Connection String
+            var connectionString = @"Server=192.168.65.0,1433;Database=Cozy;User Id = SA; Password= Ssms2019!";
+
+            //Add a service for DB
+            services.AddDbContext<CozyDbContext>(options => options.UseSqlServer(connectionString));
+
             services.AddMvc();
         }
 
