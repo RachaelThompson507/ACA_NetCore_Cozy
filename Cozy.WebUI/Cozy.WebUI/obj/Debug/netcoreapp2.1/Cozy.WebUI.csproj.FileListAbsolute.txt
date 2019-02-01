@@ -9,7 +9,6 @@
 /Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.WebUI/bin/Debug/netcoreapp2.1/Cozy.Domain.dll
 /Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.WebUI/bin/Debug/netcoreapp2.1/Cozy.Data.pdb
 /Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.WebUI/bin/Debug/netcoreapp2.1/Cozy.Domain.pdb
-/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.WebUI/obj/Debug/netcoreapp2.1/Cozy.WebUI.csprojResolveAssemblyReference.cache
 /Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.WebUI/obj/Debug/netcoreapp2.1/Cozy.WebUI.csproj.CoreCompileInputs.cache
 /Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.WebUI/obj/Debug/netcoreapp2.1/Cozy.WebUI.RazorAssemblyInfo.cache
 /Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.WebUI/obj/Debug/netcoreapp2.1/Cozy.WebUI.RazorAssemblyInfo.cs
@@ -27,3 +26,4 @@
 /Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.WebUI/obj/Debug/netcoreapp2.1/Cozy.WebUI.dll
 /Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.WebUI/obj/Debug/netcoreapp2.1/Cozy.WebUI.pdb
 /Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.WebUI/obj/Debug/netcoreapp2.1/Cozy.WebUI.csproj.CopyComplete
+/Users/rachael_thompson/Desktop/Dev/ACA_NetCore_Cozy/Cozy.WebUI/Cozy.WebUI/obj/Debug/netcoreapp2.1/Cozy.WebUI.csprojResolveAssemblyReference.cache

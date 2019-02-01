@@ -1,38 +1,10 @@
 ﻿<Properties StartupConfiguration="{F13594CC-D07C-47E4-9456-03F94F017732}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Cozy.Data/Context/CozyDbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cozy.WebUI/Program.cs">
     <Files>
-      <File FileName="Cozy.Data/Context/CozyDbContext.cs" Line="24" Column="6" />
+      <File FileName="Cozy.Data/Context/CozyDbContext.cs" Line="21" Column="13" />
       <File FileName="Cozy.WebUI/Startup.cs" Line="26" Column="31" />
       <File FileName="Cozy.WebUI/Program.cs" Line="17" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Cozy.WebUI" expanded="True">
-            <Node name="Cozy.Data" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="Context" expanded="True">
-                <Node name="CozyDbContext.cs" selected="True" />
-              </Node>
-            </Node>
-            <Node name="Cozy.Domain" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="Models" expanded="True" />
-            </Node>
-            <Node name="Cozy.WebUI" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="Controllers" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
