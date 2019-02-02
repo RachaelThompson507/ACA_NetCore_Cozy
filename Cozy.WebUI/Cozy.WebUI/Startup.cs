@@ -17,8 +17,8 @@ namespace Cozy.WebUI
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            //Add A Connection String
-            var connectionString = @"Server=192.168.65.0,1433;Database=Cozy;User Id = SA; Password= Ssms2019!";
+            //Add A Connection String- need to fix it later
+            var connectionString = "Data Source=(localdb)\\ProjectsV13;Initial Catalog=Cozy;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
             //Add a service for DB
             services.AddDbContext<CozyDbContext>(options => options.UseSqlServer(connectionString));
