@@ -15,6 +15,6 @@ namespace Cozy.Domain.Models
         public IEnumerable<Payment> Payments { get; set; }
         //Could add LEASE - MAINTENANCE ETC
         public IEnumerable<Lease> Leases { get; set; }
-        public IEnumerable<Maintenence>Maintenences { get; set; }
+        public IEnumerable<Maintenance>Maintenences { get; set; }
     }
 }
