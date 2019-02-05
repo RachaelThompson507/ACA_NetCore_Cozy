@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using Cozy.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace Cozy.WebUI
@@ -21,7 +20,7 @@ namespace Cozy.WebUI
             var connectionString = "Data Source=(localdb)\\ProjectsV13;Initial Catalog=Cozy;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
             //Add a service for DB
-            services.AddDbContext<CozyDbContext>(options => options.UseSqlServer(connectionString));
+           // services.AddDbContext<CozyDbContext>(options => options.UseSqlServer(connectionString));
 
             services.AddMvc();
         }

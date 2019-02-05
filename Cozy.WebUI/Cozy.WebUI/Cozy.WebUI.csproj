@@ -20,7 +20,4 @@
   <ItemGroup>
     <Content Remove="Controllers.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Cozy.Data\Cozy.Data.csproj" />
-  </ItemGroup>
 </Project>
