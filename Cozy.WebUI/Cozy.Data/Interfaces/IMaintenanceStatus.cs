@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Cozy.Data.Interfaces
 {
-    interface IMaintenanceStatus
+   public interface IMaintenanceStatus
     {
         //Create
         MaintenanceStatus Create(MaintenanceStatus newMaintenanceStatus);
