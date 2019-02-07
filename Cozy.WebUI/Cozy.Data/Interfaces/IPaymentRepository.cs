@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Cozy.Data.Interfaces
 {
-   public interface IPayment
+   public interface IPaymentRepository
     {
         //Create
         Payment Create(Payment newLease);

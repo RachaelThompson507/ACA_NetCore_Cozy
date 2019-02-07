@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Cozy.Data.Interfaces
 {
-   public interface ILandlordDataService
+   public interface ILandlordRepository
     {
         //create
         Landlord Create(Landlord landlord);

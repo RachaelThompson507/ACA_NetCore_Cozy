@@ -5,7 +5,7 @@ using Cozy.Domain.Models;
 
 namespace Cozy.Data.Interfaces
 {
-    public interface ITenant
+    public interface ITenantRepository
     {
         //Create
         Tenant Create(Tenant newTenant);

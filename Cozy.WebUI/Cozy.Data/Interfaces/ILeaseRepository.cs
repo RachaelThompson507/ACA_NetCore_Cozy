@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Cozy.Data.Interfaces
 {
-   public interface ILeaseDataService
+   public interface ILeaseRepository
     {
         //Create
         Lease Create(Lease newLease);
