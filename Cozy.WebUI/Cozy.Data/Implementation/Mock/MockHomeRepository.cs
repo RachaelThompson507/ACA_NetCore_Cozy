@@ -30,7 +30,7 @@ namespace Cozy.Data.Implementation.Mock
 
         public ICollection<Home> GetByLandlordId(string landlordId)
         {
-            return Homes.FindAll(h => h.LandLordId == landlordId);
+            return Homes.FindAll(h => h.LandlordId == landlordId);
         }
 
         public Home Update(Home updatedHome)
