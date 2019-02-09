@@ -12,7 +12,7 @@ namespace Cozy.Data.Interfaces
 
         //read homes 
         Home GetById(int homeId);
-        ICollection<Home> GetByLandlordId(int landlordId);
+        ICollection<Home> GetByLandlordId(string landlordId);
 
         //update homes 
         Home Update(Home updatedHome);
