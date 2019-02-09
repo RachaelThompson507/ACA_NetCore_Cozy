@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Cozy.Domain.Models
 {
-    public class Landlord
+    public class landlord
     {
         public string Id { get; set; }
         public string FirstName { get; set; }

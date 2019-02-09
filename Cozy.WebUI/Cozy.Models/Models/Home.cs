@@ -12,6 +12,6 @@ namespace Cozy.Domain.Models
         //Foriegn Key (FK)
         public string LandlordId { get; set; }
         //navigational reference
-        public Landlord Landlord { get; set; }
+        public landlord Landlord { get; set; }
     }
 }

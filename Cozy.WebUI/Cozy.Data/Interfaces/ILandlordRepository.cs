@@ -8,15 +8,15 @@ namespace Cozy.Data.Interfaces
    public interface ILandlordRepository
     {
         //create
-        Landlord Create(Landlord landlord);
+        landlord Create(landlord landlord);
 
         //read
-        Landlord GetById(string landlordId);
+        landlord GetById(string landlordId);
 
         //update
-        Landlord Update(Landlord updatedLandlord);
+        landlord Update(landlord updatedLandlord);
 
         //delete
-        bool DeleteById(int landlordId);
+        bool DeleteById(string landlordId);
     }
 }
