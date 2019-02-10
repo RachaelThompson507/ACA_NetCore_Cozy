@@ -14,7 +14,7 @@ namespace Cozy.Domain.Models
         //inverse relationship
         public IEnumerable<Payment> Payments { get; set; }
         //Could add LEASE - MAINTENANCE ETC
-        public IEnumerable<Lease> Leases { get; set; }
+        public IEnumerable<Lease> Lease { get; set; }
         public IEnumerable<Maintenance>Maintenences { get; set; }
     }
 }

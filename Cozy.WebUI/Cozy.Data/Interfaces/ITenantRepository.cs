@@ -11,14 +11,14 @@ namespace Cozy.Data.Interfaces
         Tenant Create(Tenant newTenant);
 
         //Read
-        Tenant GetById(int tenantId);
-        ICollection<Home> GetByLeaseId(int leaseId);
+        Tenant GetById(string tenantId);
+        //ICollection<Home> GetByLeaseId(int leaseId);
 
         //Update
         Tenant Update(Tenant updatedTenant);
 
         //Delete
-        bool DeleteById(int tenantId);
+        bool DeleteById(string tenantId);
 
     }
 }

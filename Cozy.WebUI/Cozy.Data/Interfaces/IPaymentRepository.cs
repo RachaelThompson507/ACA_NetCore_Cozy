@@ -8,7 +8,7 @@ namespace Cozy.Data.Interfaces
    public interface IPaymentRepository
     {
         //Create
-        Payment Create(Payment newLease);
+        Payment Create(Payment newPayment);
 
         //Read
         Payment GetById(int paymentId);
@@ -16,7 +16,7 @@ namespace Cozy.Data.Interfaces
         ICollection<Payment> GetByLeaseId(int leaseId);
 
         //Update
-        Payment Update(Payment updatedLease);
+        Payment Update(Payment updatedPayment);
 
         //Delete
         bool DeleteById(int paymentId);
