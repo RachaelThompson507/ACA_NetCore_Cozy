@@ -17,7 +17,7 @@ namespace Cozy.Data.Interfaces
         ICollection<Maintenance> GetMaintenanceStatus(int maintenanceStatusId);
 
         //Update
-        Maintenance Update(Maintenance updatedLease);
+        Maintenance Update(Maintenance updatedMaintenance);
 
         //Delete
         bool DeleteById(int maintenanceId);
