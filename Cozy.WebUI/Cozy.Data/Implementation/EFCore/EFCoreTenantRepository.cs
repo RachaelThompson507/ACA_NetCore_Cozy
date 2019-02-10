@@ -1,7 +1,9 @@
-﻿using Cozy.Data.Interfaces;
+﻿using Cozy.Data.Context;
+using Cozy.Data.Interfaces;
 using Cozy.Domain.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Cozy.Data.Implementation.EFCore
@@ -10,27 +12,42 @@ namespace Cozy.Data.Implementation.EFCore
     {
         public Tenant Create(Tenant newTenant)
         {
-            throw new NotImplementedException();
+            using (var db = new CozyDbContext())
+            {
+                db.Tenants.Add(newTenant);
+                db.SaveChanges();
+            }
+            return newTenant;
         }
 
-        public bool DeleteById(int tenantId)
+        public bool DeleteById(string tenantId)
         {
-            throw new NotImplementedException();
+            using (var db = new CozyDbContext())
+            {
+                var tenant = GetById(tenantId);
+                db.Tenants.Remove(tenant);
+                db.SaveChanges();
+            }
+            return true;
         }
 
-        public Tenant GetById(int tenantId)
+        public Tenant GetById(string tenantId)
         {
-            throw new NotImplementedException();
-        }
-
-        public ICollection<Home> GetByLeaseId(int leaseId)
-        {
-            throw new NotImplementedException();
+            using (var db = new CozyDbContext())
+            {
+                return db.Tenants.Single(t => t.Id == tenantId);
+            }
         }
 
         public Tenant Update(Tenant updatedTenant)
         {
-            throw new NotImplementedException();
+            using (var db = new CozyDbContext())
+            {
+                var update = GetById(updatedTenant.Id);
+                db.Entry(update).CurrentValues.SetValues(updatedTenant);
+                db.SaveChanges();
+                return update;
+            }
         }
     }
 }
