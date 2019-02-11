@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Cozy.Data.Interfaces
 {
-   public  interface IMaintenance
+   public  interface IMaintenanceRepository
     {
         //Create
         Maintenance Create(Maintenance newMaintenance);
@@ -17,7 +17,7 @@ namespace Cozy.Data.Interfaces
         ICollection<Maintenance> GetMaintenanceStatus(int maintenanceStatusId);
 
         //Update
-        Maintenance Update(Maintenance updatedLease);
+        Maintenance Update(Maintenance updatedMaintenance);
 
         //Delete
         bool DeleteById(int maintenanceId);
