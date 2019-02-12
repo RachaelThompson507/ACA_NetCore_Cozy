@@ -45,8 +45,7 @@ namespace Cozy.Data.Implementation.EFCore
         {
             using (var db = new CozyDbContext())
             {
-                var landLordHomes = db.Homes.Where(h => h.LandlordId == landlordId);
-                return landLordHomes.ToList() as ICollection<Home>;
+                return db.Homes.Where(h => h.LandlordId == landlordId).ToList();
             }
         }
 
