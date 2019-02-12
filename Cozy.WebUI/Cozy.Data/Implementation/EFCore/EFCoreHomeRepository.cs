@@ -28,8 +28,16 @@ namespace Cozy.Data.Implementation.EFCore
                 var home = GetById(homeId);
                 db.Homes.Remove(home);
                 db.SaveChanges();
+                
+                if(GetById(homeId)==null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            return true;
         }
 
         public Home GetById(int homeId)
