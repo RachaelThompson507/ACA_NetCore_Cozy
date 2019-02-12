@@ -7,7 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-
+using Cozy.Data.Interfaces;
+using Cozy.Data.Implementation.Mock;
+using Cozy.Data.Implementation.EFCore;
+using Cozy.Service.Services;
 
 namespace Cozy.WebUI
 {
@@ -16,7 +19,14 @@ namespace Cozy.WebUI
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
-        { 
+        {
+            //Repository Layer
+            services.AddScoped<IHomeRepository,MockHomeRepository>();
+            //services.AddScoped<IHomeRepository, EFCoreHomeRepository>();
+
+            //Service Layer
+            services.AddScoped<IHomeService, HomeService>();
+
             services.AddMvc();
         }
 

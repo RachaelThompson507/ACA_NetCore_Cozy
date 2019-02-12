@@ -1,11 +1,14 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cozy.WebUI", "Cozy.WebUI\Cozy.WebUI.csproj", "{F13594CC-D07C-47E4-9456-03F94F017732}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cozy.WebUI", "Cozy.WebUI\Cozy.WebUI.csproj", "{F13594CC-D07C-47E4-9456-03F94F017732}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cozy.Domain", "Cozy.Models\Cozy.Domain.csproj", "{175C384B-8599-4933-A91A-80EE26FC6126}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cozy.Domain", "Cozy.Models\Cozy.Domain.csproj", "{175C384B-8599-4933-A91A-80EE26FC6126}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cozy.Data", "Cozy.Data\Cozy.Data.csproj", "{04B1EECC-F9B0-4F9E-8A84-CD336E26C412}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cozy.Data", "Cozy.Data\Cozy.Data.csproj", "{04B1EECC-F9B0-4F9E-8A84-CD336E26C412}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cozy.Service", "Cozy.Service\Cozy.Service.csproj", "{8AE303DA-4A41-4A71-965C-FF87CD36A5F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,5 +28,15 @@ Global
 		{04B1EECC-F9B0-4F9E-8A84-CD336E26C412}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04B1EECC-F9B0-4F9E-8A84-CD336E26C412}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04B1EECC-F9B0-4F9E-8A84-CD336E26C412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AE303DA-4A41-4A71-965C-FF87CD36A5F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AE303DA-4A41-4A71-965C-FF87CD36A5F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AE303DA-4A41-4A71-965C-FF87CD36A5F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AE303DA-4A41-4A71-965C-FF87CD36A5F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F46895B9-8593-44D0-B51F-A6E1E0585CF9}
 	EndGlobalSection
 EndGlobal
