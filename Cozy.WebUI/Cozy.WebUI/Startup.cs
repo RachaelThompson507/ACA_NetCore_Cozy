@@ -26,6 +26,12 @@ namespace Cozy.WebUI
 
             //Service Layer
             services.AddScoped<IHomeService, HomeService>();
+            services.AddScoped<ILeaseService, LeaseService>();
+            services.AddScoped<ILandlordService, LandlordService>();
+            services.AddScoped<IMaintenanceService, MaintenanceService>();
+            services.AddScoped<IMaintenanceStatusService, MaintenanceStatusService>();
+            services.AddScoped<IPaymentService, PaymentService>();
+            services.AddScoped<ITenantService, TenantService>();
 
             services.AddMvc();
         }
