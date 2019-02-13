@@ -28,8 +28,16 @@ namespace Cozy.Data.Implementation.EFCore
                 var home = GetById(homeId);
                 db.Homes.Remove(home);
                 db.SaveChanges();
+                
+                if(GetById(homeId)==null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-            return true;
         }
 
         public Home GetById(int homeId)
@@ -45,8 +53,7 @@ namespace Cozy.Data.Implementation.EFCore
         {
             using (var db = new CozyDbContext())
             {
-                var landLordHomes = db.Homes.Where(h => h.LandlordId == landlordId);
-                return landLordHomes.ToList() as ICollection<Home>;
+                return db.Homes.Where(h => h.LandlordId == landlordId).ToList();
             }
         }
 
