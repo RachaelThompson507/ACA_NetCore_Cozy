@@ -47,6 +47,6 @@ namespace Cozy.Service.Services
 
         public Lease Update(Lease updatedLease) =>
             _leaseRepository.Update(updatedLease);
-       }
+       
     }
 }
