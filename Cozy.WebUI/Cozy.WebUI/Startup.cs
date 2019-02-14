@@ -21,21 +21,20 @@ namespace Cozy.WebUI
         public void ConfigureServices(IServiceCollection services)
         {
             //Repository Layer
-            services.AddScoped<IHomeRepository,MockHomeRepository>();
-            //services.AddScoped<IHomeRepository, EFCoreHomeRepository>();
+            //Mock REPOS
+            GetDependencyResolvedForRepositoryLayer(services);
+
+            //EFCore REPOS
+            //GetDependencyResolvedForEFCoreRepositoryLayer(services);
 
             //Service Layer
-            services.AddScoped<IHomeService, HomeService>();
-            services.AddScoped<ILeaseService, LeaseService>();
-            services.AddScoped<ILandlordService, LandlordService>();
-            services.AddScoped<IMaintenanceService, MaintenanceService>();
-            services.AddScoped<IMaintenanceStatusService, MaintenanceStatusService>();
-            services.AddScoped<IPaymentService, PaymentService>();
-            services.AddScoped<ITenantService, TenantService>();
+            GetDependencyResolvedForServiceLayer(services);
 
+            //MVC
             services.AddMvc();
         }
 
+        
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
@@ -51,6 +50,38 @@ namespace Cozy.WebUI
             //Home-Index-Optional
             app.UseMvcWithDefaultRoute();
 
+        }
+        private void GetDependencyResolvedForRepositoryLayer(IServiceCollection services)
+        {
+            services.AddScoped<IHomeRepository, MockHomeRepository>();
+            services.AddScoped<ILeaseRepository, MockLeaseRepository>();
+            services.AddScoped<ILandlordRepository, MockLandlordRepository>();
+            services.AddScoped<IMaintenanceRepository, MockMaintenanceRepository>();
+            services.AddScoped<IMaintenanceStatusRepository, MockMaintenanceStatusRepository>();
+            services.AddScoped<IPaymentRepository, MockPaymentRepository>();
+            services.AddScoped<ITenantRepository, MockTenantRepository>();
+        }
+
+        private void GetDependencyResolvedForEFCoreRepositoryLayer(IServiceCollection services)
+        {
+            services.AddScoped<IHomeRepository, EFCoreHomeRepository>();
+            services.AddScoped<ILeaseRepository, EFCoreLeaseRepository>();
+            services.AddScoped<ILandlordRepository, EFCoreLandlordRepository>();
+            services.AddScoped<IMaintenanceRepository, EFCoreMaintenanceRepository>();
+            services.AddScoped<IMaintenanceStatusRepository, EFCoreMaintenanceStatusRepository>();
+            services.AddScoped<IPaymentRepository, EFCorePaymentRepository>();
+            services.AddScoped<ITenantRepository, EFCoreTenantRepository>();
+        }
+
+        private void GetDependencyResolvedForServiceLayer(IServiceCollection services)
+        {
+            services.AddScoped<IHomeService, HomeService>();
+            services.AddScoped<ILeaseService, LeaseService>();
+            services.AddScoped<ILandlordService, LandlordService>();
+            services.AddScoped<IMaintenanceService, MaintenanceService>();
+            services.AddScoped<IMaintenanceStatusService, MaintenanceStatusService>();
+            services.AddScoped<IPaymentService, PaymentService>();
+            services.AddScoped<ITenantService, TenantService>();
         }
     }
 }

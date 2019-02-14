@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Cozy.Domain.Models;
 using Cozy.Service.Services;
+using Cozy.WebUI.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cozy.WebUI.Controllers
@@ -13,11 +14,11 @@ namespace Cozy.WebUI.Controllers
         private readonly IHomeService _homeService;
         private readonly ILeaseService _leaseService;
 
-        public LandlordController(IHomeService homeService)=>
+        public LandlordController(IHomeService homeService, ILeaseService leaseService)
+        {
             _homeService = homeService;
-
-        public LandlordController(ILeaseService leaseService) =>
             _leaseService = leaseService;
+        }
 
         public IActionResult Index()
         {
@@ -26,9 +27,11 @@ namespace Cozy.WebUI.Controllers
 
         public IActionResult HomeHistory(int id)
         {
-            Home home = _homeService.GetById(id);
-            ICollection<Lease> leases = _leaseService.GetByHomeId(id);
-            return View();
+            HomeHistoryViewModel hhvm = new HomeHistoryViewModel();
+
+            hhvm.Home = _homeService.GetById(id);
+            hhvm.Leases = _leaseService.GetByHomeId(id);
+            return View(hhvm);
         }
     }
 }
