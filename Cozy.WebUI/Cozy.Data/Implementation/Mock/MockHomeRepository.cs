@@ -14,7 +14,9 @@ namespace Cozy.Data.Implementation.Mock
             {
                 Id = 1,
                 Address = "123 Fake Street",
-                City = "Austin"  
+                City = "Austin" , 
+                State = "TX",
+                ImageURL = "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1946&q=80"
             }
         };
 
