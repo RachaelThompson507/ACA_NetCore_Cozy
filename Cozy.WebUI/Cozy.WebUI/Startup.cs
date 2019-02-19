@@ -66,11 +66,11 @@ namespace Cozy.WebUI
         {
             services.AddScoped<IHomeRepository, EFCoreHomeRepository>();
             services.AddScoped<ILeaseRepository, EFCoreLeaseRepository>();
-            services.AddScoped<ILandlordRepository, EFCoreLandlordRepository>();
+            //services.AddScoped<ILandlordRepository, EFCoreLandlordRepository>();
             services.AddScoped<IMaintenanceRepository, EFCoreMaintenanceRepository>();
             services.AddScoped<IMaintenanceStatusRepository, EFCoreMaintenanceStatusRepository>();
             services.AddScoped<IPaymentRepository, EFCorePaymentRepository>();
-            services.AddScoped<ITenantRepository, EFCoreTenantRepository>();
+            //services.AddScoped<ITenantRepository, EFCoreTenantRepository>();
         }
 
         private void GetDependencyResolvedForServiceLayer(IServiceCollection services)
