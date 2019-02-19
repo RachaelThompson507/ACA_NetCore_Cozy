@@ -11,6 +11,8 @@ using Cozy.Data.Interfaces;
 using Cozy.Data.Implementation.Mock;
 using Cozy.Data.Implementation.EFCore;
 using Cozy.Service.Services;
+using Cozy.Domain.Models;
+using Cozy.Data.Context;
 
 namespace Cozy.WebUI
 {
@@ -22,13 +24,18 @@ namespace Cozy.WebUI
         {
             //Repository Layer
             //Mock REPOS
-            GetDependencyResolvedForRepositoryLayer(services);
+            //GetDependencyResolvedForRepositoryLayer(services);
 
             //EFCore REPOS
-            //GetDependencyResolvedForEFCoreRepositoryLayer(services);
+            GetDependencyResolvedForEFCoreRepositoryLayer(services);
 
             //Service Layer
             GetDependencyResolvedForServiceLayer(services);
+
+            services.AddDbContext<CozyDbContext>();
+
+            //service for Identitiy
+            services.AddDefaultIdentity<AppUser>().AddEntityFrameworkStores<CozyDbContext>();
 
             //MVC
             services.AddMvc();
@@ -46,6 +53,9 @@ namespace Cozy.WebUI
             //use static files first then use MVC
             app.UseStaticFiles();
 
+            //use Identity Service
+            app.UseAuthentication();
+
             //Controller-View-?id
             //Home-Index-Optional
             app.UseMvcWithDefaultRoute();
@@ -55,11 +65,11 @@ namespace Cozy.WebUI
         {
             services.AddScoped<IHomeRepository, MockHomeRepository>();
             services.AddScoped<ILeaseRepository, MockLeaseRepository>();
-            services.AddScoped<ILandlordRepository, MockLandlordRepository>();
+            //services.AddScoped<ILandlordRepository, MockLandlordRepository>();
             services.AddScoped<IMaintenanceRepository, MockMaintenanceRepository>();
             services.AddScoped<IMaintenanceStatusRepository, MockMaintenanceStatusRepository>();
             services.AddScoped<IPaymentRepository, MockPaymentRepository>();
-            services.AddScoped<ITenantRepository, MockTenantRepository>();
+            //services.AddScoped<ITenantRepository, MockTenantRepository>();
         }
 
         private void GetDependencyResolvedForEFCoreRepositoryLayer(IServiceCollection services)
@@ -77,11 +87,11 @@ namespace Cozy.WebUI
         {
             services.AddScoped<IHomeService, HomeService>();
             services.AddScoped<ILeaseService, LeaseService>();
-            services.AddScoped<ILandlordService, LandlordService>();
+            //services.AddScoped<ILandlordService, LandlordService>();
             services.AddScoped<IMaintenanceService, MaintenanceService>();
             services.AddScoped<IMaintenanceStatusService, MaintenanceStatusService>();
             services.AddScoped<IPaymentService, PaymentService>();
-            services.AddScoped<ITenantService, TenantService>();
+            //services.AddScoped<ITenantService, TenantService>();
         }
     }
 }
