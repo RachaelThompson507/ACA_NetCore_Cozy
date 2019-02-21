@@ -13,6 +13,7 @@ using Cozy.Data.Implementation.EFCore;
 using Cozy.Service.Services;
 using Cozy.Domain.Models;
 using Cozy.Data.Context;
+using Microsoft.AspNetCore.Identity;
 
 namespace Cozy.WebUI
 {
@@ -35,7 +36,7 @@ namespace Cozy.WebUI
             services.AddDbContext<CozyDbContext>();
 
             //service for Identitiy
-            services.AddDefaultIdentity<AppUser>().AddEntityFrameworkStores<CozyDbContext>();
+            services.AddIdentity<AppUser,IdentityRole>().AddEntityFrameworkStores<CozyDbContext>();
 
             //MVC
             services.AddMvc();
