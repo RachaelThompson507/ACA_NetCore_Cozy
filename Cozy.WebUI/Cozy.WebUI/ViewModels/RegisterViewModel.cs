@@ -17,7 +17,7 @@ namespace Cozy.WebUI.ViewModels
         [DataType(DataType.Password), Compare("Password", ErrorMessage ="Password Fields Do Not Match"),Required]
         public string ConfirmPassword { get; set; }
         [Required, Display(Name="Select a Role")]
-        public string RoleId { get; set; }
+        public string Role{ get; set; }
         public SelectList Roles  { get; set;}
     }
 }
