@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 using Cozy.Domain.Models;
 using Cozy.Service.Services;
 using Cozy.WebUI.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cozy.WebUI.Controllers
 {
+    [Authorize(Roles = "Landlord")]
     public class LandlordController : Controller
     {
         private readonly IHomeService _homeService;

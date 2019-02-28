@@ -39,7 +39,19 @@ namespace Cozy.WebUI
             services.AddIdentity<AppUser,IdentityRole>()
                 .AddEntityFrameworkStores<CozyDbContext>();
 
+            services.ConfigureApplicationCookie(options =>
+            {
+                //overrides default account login
+                options.LoginPath = "/Account/SignIn";
+                //sends unauth user to a view
+                options.AccessDeniedPath = "/Account/Unauthorized";
+            });
+
             //HW Find Out How to set DIFFERENT options for Password Creation
+            //services.Configure<IdentityOptions>(options =>
+            //{
+
+            //});
 
             //MVC
             services.AddMvc();
