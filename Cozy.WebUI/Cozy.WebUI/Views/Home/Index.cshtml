@@ -4,5 +4,8 @@
 }
 <h2>Index</h2>
 <div>
-    @Model.Id - @Model.Address, @Model.City
+    @if(User.Identity.IsAuthenticated)
+    {
+        <p>Welcome to the Site! - @User.Identity.Name</p>
+    }
 </div>

@@ -4,14 +4,16 @@ using Cozy.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Cozy.Data.Migrations
 {
     [DbContext(typeof(CozyDbContext))]
-    partial class CozyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190219015224_app-users-added")]
+    partial class appusersadded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -214,11 +216,6 @@ namespace Cozy.Data.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles");
-
-                    b.HasData(
-                        new { Id = "7cb99499-6fa1-4083-ba5b-870dc464aa38", ConcurrencyStamp = "1bab8cfe-18ae-4b96-b438-f0fe6435ff7f", Name = "Landlord", NormalizedName = "LANDLORD" },
-                        new { Id = "87931f87-fa85-44f1-84d5-d444c89affef", ConcurrencyStamp = "7364f4b2-8f17-4f5a-bf47-312b74fb56ec", Name = "Tenant", NormalizedName = "TENANT" }
-                    );
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -11,7 +11,7 @@ namespace Cozy.Domain.Models
 
         //Foriegn Key (FK)
         public string LandlordId { get; set; }
-        //navigational reference
-        public landlord Landlord { get; set; }
+        public AppUser Landlord { get; set; }
+        //convention Landlord      Id => LandlordId --> AspNetCoreUser
     }
 }

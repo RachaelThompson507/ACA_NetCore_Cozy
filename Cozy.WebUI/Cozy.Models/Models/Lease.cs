@@ -11,9 +11,9 @@ namespace Cozy.Domain.Models
         //Relationships (FK)
         public int HomeId { get; set; }
         public string TenantId { get; set; }
+        public AppUser Tenant { get; set; }
         //navigational reference
         public Home Home { get; set; }
-        public Tenant Tenant { get; set; }
 
     }
 }
