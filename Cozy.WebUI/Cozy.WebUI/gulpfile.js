@@ -1,11 +1,21 @@
-﻿'use strict';
-const sass = require('gulp-sass');
+﻿const sass = require('gulp-sass');
+const gulp = require('gulp');
+const concat = require('gulp-concat');
+const cssmin = require('gulp-cssmin');
 
-function myTask(cb) {
-    //test
-    console.log('My first task.');
-    //call back function
-    cb();
+sass.compiler = require('node-sass');
+
+function sassTask() {
+    return gulp.src('./wwwroot/sass/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(concat('style.css'))
+        .pipe(cssmin())
+        .pipe(gulp.dest('./wwwroot/css'));
 }
 
-exports.default = myTask;
+function watchTask() {
+    gulp.watch('./wwwroot/sass/**/*.scss', gulp.series([sassTask]));
+}
+
+exports.sass = sassTask;
+exports.watch = watchTask;
