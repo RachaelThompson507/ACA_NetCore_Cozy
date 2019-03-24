@@ -1,0 +1,28 @@
+﻿@model CreateHomeviewModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+<form asp-action="create" enctype="multipart/form-data" method="post">
+    <div class="form-group">
+        <label asp-for="home.Address"></label>
+        <input class="form-control" asp-for="home.Address" />
+    </div>
+    <div class="form-group">
+        <label asp-for="home.City"></label>
+        <input class="form-control" asp-for="home.City" />
+    </div>
+    <div class="form-group">
+        <label asp-for="home.State"></label>
+        <input class="form-control" asp-for="home.State" />
+    </div>
+    <div class="form-group">
+        <label asp-for="FormImg"></label>
+        <input type="file" class="form-control-file" accept=".jpg, .png, .svg" asp-for="FormImg" />
+    </div>
+    <div class="form-group">
+        <button type="Submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
